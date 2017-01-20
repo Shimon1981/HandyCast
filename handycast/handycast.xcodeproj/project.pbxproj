@@ -97,7 +97,7 @@
 					2EF68A9B1E32853A006546A1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5T259S47Z5;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -264,6 +264,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shvartsbroit.handycast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3395d965-65d7-4eca-a362-dba679aaee9a";
+				PROVISIONING_PROFILE_SPECIFIER = "HandyCast Dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -277,6 +279,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shvartsbroit.handycast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3395d965-65d7-4eca-a362-dba679aaee9a";
+				PROVISIONING_PROFILE_SPECIFIER = "HandyCast Dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
