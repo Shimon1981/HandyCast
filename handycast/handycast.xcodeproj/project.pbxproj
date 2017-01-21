@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E258BA9B94A3DF1AC9A6BFF /* Pods_handycast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E851866A3D8AD070EAD1F /* Pods_handycast.framework */; };
 		2E49FF7E1E336F69005440FA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E49FF7D1E336F69005440FA /* MediaPlayer.framework */; };
 		2EF68AA01E32853A006546A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF68A9F1E32853A006546A1 /* AppDelegate.swift */; };
 		2EF68AA21E32853A006546A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF68AA11E32853A006546A1 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		069E851866A3D8AD070EAD1F /* Pods_handycast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handycast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		286F8585861978D2E0B7F853 /* Pods-handycast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handycast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-handycast/Pods-handycast.debug.xcconfig"; sourceTree = "<group>"; };
 		2E49FF7D1E336F69005440FA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2EF68A9C1E32853A006546A1 /* handycast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handycast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF68A9F1E32853A006546A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		2EF68AA91E32853A006546A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EF68AAB1E32853A006546A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF68AB21E328925006546A1 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		AE027390F0538EFD72F4D58D /* Pods-handycast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handycast.release.xcconfig"; path = "Pods/Target Support Files/Pods-handycast/Pods-handycast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			files = (
 				2E49FF7E1E336F69005440FA /* MediaPlayer.framework in Frameworks */,
 				2EF68AB31E328925006546A1 /* Speech.framework in Frameworks */,
+				1E258BA9B94A3DF1AC9A6BFF /* Pods_handycast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 				2EF68A9E1E32853A006546A1 /* handycast */,
 				2EF68A9D1E32853A006546A1 /* Products */,
 				2EF68AB11E328925006546A1 /* Frameworks */,
+				CE1E95870348854E1CD73275 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +82,18 @@
 			children = (
 				2E49FF7D1E336F69005440FA /* MediaPlayer.framework */,
 				2EF68AB21E328925006546A1 /* Speech.framework */,
+				069E851866A3D8AD070EAD1F /* Pods_handycast.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1E95870348854E1CD73275 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				286F8585861978D2E0B7F853 /* Pods-handycast.debug.xcconfig */,
+				AE027390F0538EFD72F4D58D /* Pods-handycast.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EF68AAE1E32853A006546A1 /* Build configuration list for PBXNativeTarget "handycast" */;
 			buildPhases = (
+				39BAA6EDF210D4D14E63E7D4 /* [CP] Check Pods Manifest.lock */,
 				2EF68A981E32853A006546A1 /* Sources */,
 				2EF68A991E32853A006546A1 /* Frameworks */,
 				2EF68A9A1E32853A006546A1 /* Resources */,
+				A76215069E874A9336E15FBD /* [CP] Embed Pods Frameworks */,
+				88BCB04483B9E1875A6F7EAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +166,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39BAA6EDF210D4D14E63E7D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88BCB04483B9E1875A6F7EAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handycast/Pods-handycast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76215069E874A9336E15FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handycast/Pods-handycast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EF68A981E32853A006546A1 /* Sources */ = {
@@ -273,6 +340,7 @@
 		};
 		2EF68AAF1E32853A006546A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286F8585861978D2E0B7F853 /* Pods-handycast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5T259S47Z5;
@@ -288,6 +356,7 @@
 		};
 		2EF68AB01E32853A006546A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE027390F0538EFD72F4D58D /* Pods-handycast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5T259S47Z5;
