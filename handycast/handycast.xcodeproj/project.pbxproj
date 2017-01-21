@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E49FF7E1E336F69005440FA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E49FF7D1E336F69005440FA /* MediaPlayer.framework */; };
 		2EF68AA01E32853A006546A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF68A9F1E32853A006546A1 /* AppDelegate.swift */; };
 		2EF68AA21E32853A006546A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF68AA11E32853A006546A1 /* ViewController.swift */; };
 		2EF68AA51E32853A006546A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF68AA31E32853A006546A1 /* Main.storyboard */; };
 		2EF68AA71E32853A006546A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF68AA61E32853A006546A1 /* Assets.xcassets */; };
 		2EF68AAA1E32853A006546A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF68AA81E32853A006546A1 /* LaunchScreen.storyboard */; };
+		2EF68AB31E328925006546A1 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF68AB21E328925006546A1 /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E49FF7D1E336F69005440FA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2EF68A9C1E32853A006546A1 /* handycast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handycast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF68A9F1E32853A006546A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF68AA11E32853A006546A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		2EF68AA61E32853A006546A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EF68AA91E32853A006546A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EF68AAB1E32853A006546A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF68AB21E328925006546A1 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E49FF7E1E336F69005440FA /* MediaPlayer.framework in Frameworks */,
+				2EF68AB31E328925006546A1 /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				2EF68A9E1E32853A006546A1 /* handycast */,
 				2EF68A9D1E32853A006546A1 /* Products */,
+				2EF68AB11E328925006546A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,15 @@
 				2EF68AAB1E32853A006546A1 /* Info.plist */,
 			);
 			path = handycast;
+			sourceTree = "<group>";
+		};
+		2EF68AB11E328925006546A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E49FF7D1E336F69005440FA /* MediaPlayer.framework */,
+				2EF68AB21E328925006546A1 /* Speech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +320,7 @@
 				2EF68AB01E32853A006546A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
